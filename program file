@@ -1,0 +1,15 @@
+import random
+
+i=input('wanna roll a dice:').lower()
+a=4
+b=6
+if i=='yes':
+    while a<b:
+        n=random.randint(1,7)
+        print(n)
+        i=input('wanna roll a dice again:').lower()
+        if i!='yes':
+            print('ok good bye')
+            break
+else:
+    print('ok, cool')
